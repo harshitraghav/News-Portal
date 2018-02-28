@@ -1,0 +1,16 @@
+<h2><b>Category News</h2></b>
+ <div ng-if="news">
+     <div ng-repeat="n in news">
+        <h1 style="color:darkgreen">{{n.title}}</h1>
+        <h4 style="color:grey">{{n.category}}</h4> Posted on <h5 style="color:darkolivegreen">{{n.time|date}}</h5><br/>
+       <p style="font-size:20px"> {{n.body}}</p>
+        <a href="#!/single/{{n.time}}" style="color:blue">Read More</a>
+        <hr/>
+     </div>
+ </div>
+</div>
+<div ng-repeat="ctg in ctgnews.dataa">
+    <h1 style="color:darkgreen">{{ctg.title}}</h1>
+    Posted on <h5 style="color:darkolivegreen">{{ctg.time|date}}</h5>
+    <p style="font-size:20px"> {{ctg.body}}</p>
+    </div>

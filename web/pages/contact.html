@@ -1,0 +1,27 @@
+<form action="#" method="post">
+					<div class="col-md-6 w3_agile_mail_grid" style="size:50px"> 
+						<span class="input input--ichiro">
+							<input class="input__field input__field--ichiro" type="text" ng-model="myData.name" id="input-25" placeholder=" " required="" />
+							<label class="input__label input__label--ichiro" for="input-25">
+								<span style="size:50px">Your Name</span>
+							</label>
+						</span>
+						<span class="input input--ichiro"style="size:50px">
+							<input class="input__field input__field--ichiro" type="email" ng-model="myData.email" id="input-26" placeholder=" " required="" />
+							<label class="input__label input__label--ichiro" for="input-26">
+								<span class="input__label-content input__label-content--ichiro">Your Email</span>
+							</label>
+						</span>
+						<span class="input input--ichiro">
+							<input class="input__field input__field--ichiro" type="text" ng-model="myData.mobile" id="input-27" placeholder=" " required="" />
+							<label class="input__label input__label--ichiro" for="input-27">
+								<span class="input__label-content input__label-content--ichiro">Your Phone Number</span>
+							</label>
+						</span>
+						<input type="button" ng-click="contact()" value="Submit">
+					</div>
+					<div class="col-md-6 w3_agile_mail_grid">
+						<textarea name="Message" placeholder="Your message here..." required="" ng-model="myData.message"></textarea>
+					</div>
+					<div class="clearfix"> </div>
+				</form>

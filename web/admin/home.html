@@ -1,0 +1,20 @@
+<h2>News</h2>
+<table class="table">
+  <tr>
+      <th>S.no</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Body</th>
+      <th>Date</th>
+      <th>Action</th>
+  </tr>
+  <tr ng-repeat="nt in new.mesg">
+      <td>{{$index + 1}}</td>
+      <td>{{nt.title}}</td>
+      <td>{{nt.category}}</td>
+      <td>{{nt.body}}</td>
+      <td>{{nt.time|date}}</td>
+      <td>
+      <a href="#!/delcat/{{nt.time}}" class="btn btn-danger"><span class="	glyphicon glyphicon-remove"></span></a></td>
+  </tr>
+</table>

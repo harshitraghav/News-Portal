@@ -1,0 +1,26 @@
+<div class="container">
+ <h2>Login Here</h2>
+  <div ng-if="msg==false">
+    <div class="alert alert-danger">
+  Enter correct id or password
+    </div>
+    </div>
+    
+  <form method="post" ng-submit="login()">
+    <div class="form-group">
+        <label>Id:</label>
+        <input type="text" ng-model="myData.id" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label>Password:</label>
+        <input type="password" ng-model="myData.pass" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        
+        <input type="submit" name="sub" class="btn btn-success"/>
+        <input type="reset"  class="btn btn-danger"/>
+    </div>
+  </form>
+  <a href="javascript:void()" ng-click="SignInButton()"><img src="g.png"/></a><br/>
+  <a href="#!/signup" class="btn btn-info">New User</a>
+</div>

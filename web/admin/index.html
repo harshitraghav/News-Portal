@@ -1,0 +1,63 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-cookies/angular-cookies.min.js"></script>
+  <script src="node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
+  <script src="node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
+  <script src="app/app.js"></script>
+    </head>
+    <body ng-app="MyApp" ng-controller="MyCtrl">
+        <main>
+            <header>
+              <div ng-if="!cok">
+                <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Admin Panel</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#"></a></li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+     
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+              </div>
+              <div ng-if="cok">
+                <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#!/dashboard">Dashboard</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#!/home">Home</a></li>
+      <li><a href="#!/cpass">Change Pass</a></li>
+      <li><a href="#!/addnews">Add News</a></li>
+    <!--<li><a href="#!/dashboard">Welcome : {{cok}}</a></li>-->
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+     
+      <li><a href="#!/logout" ng-click="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+              </div>
+            </header>
+            <section >
+               
+               <div class="container"ng-view>
+                   
+               </div>
+            </section>
+        </main>
+
+    </body>
+</html>

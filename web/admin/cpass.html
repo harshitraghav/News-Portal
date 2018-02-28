@@ -1,0 +1,26 @@
+<div class="row">
+    
+    <div ng-if="data.error==1">
+    <div class="alert alert-danger" ng-bind="data.msg">
+    </div>
+    </div>
+    <div ng-if="data.error==0">
+    <div class="alert alert-danger" ng-bind="data.msg">
+    </div>
+    </div>
+ <form method="post" ng-submit="chpass()">
+  <div class="form-group">
+      <label>Op:</label>
+      <input type="password" ng-model="myData.op" required class="form-control"/>
+  </div>
+  <div class="form-group">
+      <label>Np:</label>
+      <input type="password" ng-model="myData.np" required class="form-control"/>
+  </div>
+  <div class="form-group">
+      <label>Cp:</label>
+      <input type="password" ng-model="myData.cp" required class="form-control"/>
+  </div>
+  <input type="submit" value="submit" class="btn btn-success"/>
+ </form>
+</div>

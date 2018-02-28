@@ -1,0 +1,21 @@
+{
+  "name": "expp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-cookies": "^1.6.5",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1",
+    "multer": "^1.3.0",
+    "nodemailer": "^4.0.1",
+    "sha1": "^1.1.1"
+  }
+}

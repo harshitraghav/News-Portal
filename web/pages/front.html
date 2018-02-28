@@ -1,0 +1,13 @@
+<div class="container">
+ <h2>Latest News</h2>
+
+ <div ng-if="news">
+     <div ng-repeat="n in news">
+        <h1 style="color:Darkgreen">{{n.title}}</h1>
+        <h4 style="color:grey"><b>{{n.category}}</b></h4>Posted on<h5 style="color:darkolivegreen"> {{n.time|date}}</h5><br/>
+       <p style="font-size:20px"> {{n.body}}</p>
+        <a href="#!/single/{{n.time}}" style="color:blue">Read More</a>
+        <hr style="border-style:solid"/>
+     </div>
+ </div>
+</div>
